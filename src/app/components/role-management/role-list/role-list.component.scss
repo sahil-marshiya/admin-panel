@@ -39,7 +39,6 @@ td.mat-cell,
 th.mat-header-cell {
   padding: 16px;
   min-width: 120px;
-  /* Added min-width to make columns more flexible */
 }
 
 button.mat-icon-button {
@@ -54,7 +53,7 @@ button.delete-button {
   color: #d32f2f;
 }
 
-/* Add some space between the edit and delete buttons */
+
 .role-list-container button {
   margin-right: 10px;
 }
@@ -64,7 +63,6 @@ button.delete-button {
   border-radius: 4px;
 }
 
-/* Ensure actions column is smaller and does not take up too much space */
 .actions-cell {
   width: 100px;
   text-align: center;
