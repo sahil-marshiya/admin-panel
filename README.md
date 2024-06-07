@@ -1,27 +1,117 @@
-# AdminPanel
+# Admin Panel Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Welcome to the Admin Panel project! This repository contains the source code for the Admin Panel application.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. [Introduction](#introduction)
+2. [Source Code Overview](#source-code-overview)
+3. [Build and Run Instructions](#build-and-run-instructions)
+4. [API Details](#api-details)
+5. [Third-party Libraries](#third-party-libraries)
+6. [Future Improvements](#future-improvements)
 
-## Code scaffolding
+## 1. Introduction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This document provides documentation for the Admin Panel project, detailing its structure, functionalities, and instructions for building and running the application.
 
-## Build
+## 2. Source Code Overview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The source code for the Admin Panel is organized into modules for user and role management. Each module contains components for listing, adding, and editing users/roles.
 
-## Running unit tests
+### User Management Module
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `user-list.component`: Component for listing users.
+- `add-user.component`: Component for adding users.
+- `edit-user.component`: Component for editing users.
+- `user.service`: Service for managing user data.
 
-## Running end-to-end tests
+### Role Management Module
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `role-list.component`: Component for listing roles.
+- `add-role.component`: Component for adding roles.
+- `edit-role.component`: Component for editing roles.
+- `role.service`: Service for managing role data.
 
-## Further help
+## 3. Build and Run Instructions
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To build and run the Admin Panel locally, follow these steps:
+
+1. Clone the repository from GitHub.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Run the application using `ng serve`.
+5. Access the Admin Panel in your web browser at `http://localhost:4200`.
+
+## 4. API Details
+
+The Admin Panel communicates with a JSON Server backend for user and role management. Below are the details of the API endpoints:
+
+### User Management API
+
+- **Endpoint**: `http://localhost:5000/users`
+- **Description**: This endpoint provides CRUD operations for managing users.
+- **Methods**:
+  - `GET`: Retrieve a list of all users.
+  - `POST`: Add a new user.
+  - `PUT`: Update an existing user.
+  - `DELETE`: Delete a user.
+- **Sample Response**:
+  ```json
+  [
+    {
+      "name": "sahil",
+      "email": "msahil@gmail.com",
+      "role": "user",
+      "status": "active",
+      "id": "35cf"
+    },
+    {
+      "name": "Akash",
+      "email": "ss@gmail.com",
+      "role": "FE Developer",
+      "status": "Active",
+      "id": "0dd1"
+    },
+    ...
+  ]
+  ```
+
+### Role Management API
+
+- **Endpoint**: `http://localhost:5000/roles`
+- **Description**: This endpoint provides CRUD operations for managing roles.
+- **Methods**:
+  - `GET`: Retrieve a list of all roles.
+  - `POST`: Add a new role.
+  - `PUT`: Update an existing role.
+  - `DELETE`: Delete a role.
+- **Sample Response**:
+
+  ```json
+    {
+    "name": "Sahil",
+    "description": "Working as Frontend Developer",
+    "id": "3dd7"
+  },
+  {
+    "name": "Sumit",
+    "description": "Working as a BE Developer",
+    "id": "d651"
+  },
+  ...
+  ]
+
+  ```
+
+- Angular Material: UI components for Angular applications.
+- HttpClientModule: Angular module for making HTTP requests.
+- Others...
+
+## 6. Future Improvements <a name="future-improvements"></a>
+
+Potential enhancements for the Admin Panel include:
+
+- Implementing additional features such as user authentication and authorization.
+- Enhancing the UI/UX for better user experience.
+- Optimizing performance and scalability.
