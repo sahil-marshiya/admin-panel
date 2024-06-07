@@ -1,0 +1,67 @@
+.user-list-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-list-container {
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .user-list-container {
+    padding: 12px;
+  }
+}
+
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button.mat-raised-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th.mat-header-cell {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+td.mat-cell,
+th.mat-header-cell {
+  padding: 16px;
+}
+
+button.mat-icon-button {
+  margin: 0 5px;
+}
+
+button.edit-button {
+  color: #1976d2;
+
+}
+
+button.delete-button {
+  color: #d32f2f;
+
+}
+
+
+.user-list-container button {
+  margin-right: 10px;
+}
+
+.mat-icon-button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

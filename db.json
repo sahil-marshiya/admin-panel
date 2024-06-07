@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "name": "sahil",
+      "email": "msahil@gmail.com",
+      "role": "user",
+      "status": "active",
+      "id": "35cf"
+    },
+    {
+      "name": "Akash",
+      "email": "ss@gmail.com",
+      "role": "FE Developer",
+      "status": "Active",
+      "id": "0dd1"
+    },
+    {
+      "id": "d184",
+      "name": "Abhishek",
+      "email": "ab@gmail.com",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "fa47",
+      "name": "Nikhil",
+      "email": "nr@gmail.com",
+      "role": "UI developer",
+      "status": "Inactive"
+    },
+    {
+      "id": "fae4",
+      "name": "Test",
+      "email": "tt@gmail.com",
+      "role": "User",
+      "status": "InActive"
+    },
+    {
+      "id": "5a8c",
+      "name": "sa",
+      "email": "ss@gmail.com",
+      "role": "Admin",
+      "status": "active"
+    },
+    {
+      "id": "fb67",
+      "name": "as",
+      "email": "ss@fv.v",
+      "role": "asas",
+      "status": "axx"
+    },
+    {
+      "id": "5c1d",
+      "name": "Sagar",
+      "email": "Sagar@gmail.com",
+      "role": "QA engineer",
+      "status": "Active"
+    },
+    {
+      "id": "e761",
+      "name": "Sagar",
+      "email": "sagar@gmail.com",
+      "role": "BE Developer",
+      "status": "Active"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Sahil",
+      "description": "Working as Frontend Devloper",
+      "id": "3dd7"
+    },
+    {
+      "name": "Sumit",
+      "description": "Working as a BE Devloper",
+      "id": "d651"
+    },
+    {
+      "id": "428d",
+      "name": "Sagar",
+      "description": "Worked as QA engineer"
+    },
+    {
+      "id": "d1f1",
+      "name": "sushil",
+      "description": "asasa"
+    },
+    {
+      "id": "279b",
+      "name": "Sumit",
+      "description": "Work done"
+    }
+  ]
+}

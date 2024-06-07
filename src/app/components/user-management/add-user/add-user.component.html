@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Add User</h1>
+<div mat-dialog-content>
+  <form [formGroup]="userForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Enter Name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Enter Email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Role</mat-label>
+      <input matInput formControlName="role" placeholder="Enter Role">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <input matInput formControlName="status" placeholder="Enter Status">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSubmit()" [disabled]="!userForm.valid">Save</button>
+</div>

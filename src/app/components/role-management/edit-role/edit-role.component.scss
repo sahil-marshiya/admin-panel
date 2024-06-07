@@ -1,0 +1,23 @@
+mat-form-field {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-dialog-content {
+    padding: 8px;
+  }
+
+  mat-dialog-actions {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  mat-dialog-content {
+    padding: 12px;
+  }
+
+  mat-dialog-actions {
+    justify-content: flex-end;
+  }
+}

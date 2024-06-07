@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+.spacer {
+  flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-toolbar {
+    flex-direction: column;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px 16px;
+  }
+}
