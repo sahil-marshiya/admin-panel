@@ -45,7 +45,8 @@ To build and run the Admin Panel locally, follow these steps:
 
 ## 4. API Details
 
-The Admin Panel communicates with a JSON Server backend for user and role management. Below are the details of the API endpoints:
+The Admin Panel communicates with a JSON Server backend for user and role management. Below are the details of the API endpoi
+run:- npm run server for BE 
 
 ### User Management API
 
